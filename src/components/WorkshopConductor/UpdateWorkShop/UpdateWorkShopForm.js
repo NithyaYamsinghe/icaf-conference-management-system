@@ -66,6 +66,9 @@ const UpdateWorkShopForm = ({ match }) => {
         setProgress(0);
         setMessage("Could not upload the file!");
         setCurrentFile(undefined);
+      })
+      .then(() => {
+        window.location = "/view-submitted-workshops";
       });
 
     setSelectedFiles(undefined);

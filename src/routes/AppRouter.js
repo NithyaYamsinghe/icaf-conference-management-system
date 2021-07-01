@@ -77,7 +77,7 @@ const AppRouter = () => {
         ></Route>
         <Route path="/admin" component={AdminHome}></Route>
         <Route path="/editor" component={EditorRoutes}></Route>
-        <Route component={Default}></Route>
+        {/* <Route component={Default}></Route> */}
       </Switch>
       {currentUserID && <Footer />}
     </React.Fragment>

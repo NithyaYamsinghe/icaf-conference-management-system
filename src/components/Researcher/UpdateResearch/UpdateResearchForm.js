@@ -64,7 +64,9 @@ const UpdateResearchForm = ({ match }) => {
         setMessage("Could not upload the file!");
         setCurrentFile(undefined);
       })
-      .then(() => {});
+      .then(() => {
+        window.location = "/view-submitted-research-documents";
+      });
   };
 
   const selectFile = (e) => {

@@ -317,6 +317,7 @@ const SideNavigationBar = () => {
                   "font-family": "Anton",
                 }}
                 onClick={() => {
+                  window.location = "/";
                   logout();
                 }}
               >

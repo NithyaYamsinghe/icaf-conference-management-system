@@ -58,7 +58,9 @@ const UploadNewResearchForm = () => {
         setMessage("Could not upload the file!");
         setCurrentFile(undefined);
       })
-      .then(() => {});
+      .then(() => {
+        window.location = "/upload-new-research";
+      });
   };
 
   const selectFile = (e) => {

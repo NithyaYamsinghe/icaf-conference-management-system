@@ -58,6 +58,9 @@ const UploadNewWorkShopForm = () => {
         setProgress(0);
         setMessage("Could not upload the file!");
         setCurrentFile(undefined);
+      })
+      .then(() => {
+        window.location = "/upload-new-workshop";
       });
 
     setSelectedFiles(undefined);

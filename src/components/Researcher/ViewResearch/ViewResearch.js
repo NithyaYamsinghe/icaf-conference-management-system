@@ -29,7 +29,7 @@ const ViewResearch = ({ match }) => {
         <h6>Topic Interest: {topics}</h6>
         <p class="card-text">{description}</p>
         <p class="card-text">Status: {status}</p>
-        {status === "APPROVED" && (
+        {status !== "PENDING_REVIEW" && (
           <a
             onClick={(e) => navigateToPayment(e, researchId)}
             class="btn btn-primary"

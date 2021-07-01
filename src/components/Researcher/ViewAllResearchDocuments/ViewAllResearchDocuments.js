@@ -49,7 +49,9 @@ const ViewAllResearchDocuments = () => {
   };
 
   const deleteResearchSubmission = (e, researchId) => {
-    deleteResearch(researchId);
+    deleteResearch(researchId).then(() => {
+      window.location = "/view-submitted-research-documents";
+    });
   };
 
   useEffect(async () => {

@@ -49,7 +49,9 @@ const ViewAllWorkShops = () => {
   };
 
   const deleteWorkshopSubmission = (e, workshopId) => {
-    deleteWorkshop(workshopId);
+    deleteWorkshop(workshopId).then(() => {
+      window.location = "/view-submitted-workshops";
+    });
   };
 
   useEffect(async () => {

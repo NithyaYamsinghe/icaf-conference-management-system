@@ -50,12 +50,16 @@ const UserProfile = () => {
         password: password,
         id: id,
       };
-      updateUser(data);
+      updateUser(data).then(() => {
+        window.location = "/user-profile";
+      });
     }
   };
 
   const handleDeleteUser = (e) => {
-    deleteUser(currentUserID);
+    deleteUser(currentUserID).then(() => {
+      window.location = "/";
+    });
   };
 
   return (

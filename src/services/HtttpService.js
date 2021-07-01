@@ -1,6 +1,6 @@
 import axios from "axios";
 axios.defaults.headers.common["Content-Type"] = "application/json";
-axios.defaults.baseURL = "http://localhost:5000";
+axios.defaults.baseURL = "http://cms-node-app-yash.herokuapp.com";
 
 //Fixing Bi Directional Dependancies
 export function setJwt(jwt) {
